@@ -1,12 +1,12 @@
 <?php
 
-namespace Encore\Chartjs;
+namespace Ladmin\Chartjs;
 
-use Encore\Admin\Extension;
+use Ladmin\Extension;
 
 class Chartjs extends Extension
 {
     public $name = 'chartjs';
 
-    public $assets = __DIR__.'/../resources/assets';
+    public $assets = __DIR__ . '/../resources/assets';
 }

@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Chartjs;
+namespace Ladmin\Chartjs;
 
-use Encore\Admin\Admin;
+use Ladmin\Admin;
 use Illuminate\Support\ServiceProvider;
 
 class ChartjsServiceProvider extends ServiceProvider
@@ -13,7 +13,7 @@ class ChartjsServiceProvider extends ServiceProvider
     public function boot(Chartjs $extension)
     {
         if (! Chartjs::boot()) {
-            return ;
+            return;
         }
 
         if ($this->app->runningInConsole() && $assets = $extension->assets()) {
